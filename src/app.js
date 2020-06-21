@@ -1,11 +1,12 @@
 import React from "react";
-import Temperature from "./components/Temperature";
+//import Temperature from "./components/Temperature";
+import Conver from "./components/conver";
 
 function App() {
 
   return (
       <React.Fragment>
-        <Temperature />;
+      <Conver.js />
      </React.Fragment>
   )
 }

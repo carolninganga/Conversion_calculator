@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'
+import Weight from './components/conver';
 
 
 
 ReactDOM.render(
   
-    <App />,
+    <Weight />,
   document.getElementById('root')
 );
 
