@@ -1,4 +1,6 @@
 import React from "react";
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import './style.css'
 
 function DispWeight({ kToLb, input }) {
   const convertToPounds = () =>
@@ -84,7 +86,15 @@ class Weight extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="hero">
+      <Jumbotron>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+
+      <h1>Awesome Conversion Calculator</h1>
         {this.state.calcTemp && (
           <DispTemperature cToF={this.state.cToF} input={this.state.input} />
         )}
@@ -94,7 +104,8 @@ class Weight extends React.Component {
         {this.state.calcDistance && (
           <DispDistance MToKm={this.state.MToKm} input={this.state.input} />
         )}
-
+        
+        
         <input
           type='text'
           onChange={this.handleChange}
@@ -110,7 +121,8 @@ class Weight extends React.Component {
           <option value='calcTemp'>Temperature</option>
           <option value='calcDistance'>Distance</option>
         </select>
-      </>
+        </Jumbotron>
+      </div>
     );
   }
 
